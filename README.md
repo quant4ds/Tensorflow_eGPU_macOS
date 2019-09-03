@@ -9,16 +9,14 @@
 - [BACKUP][104]
 - [macOS][105]
 - [Nvidia eGPU Installation][106]
-    + [Xcode][107]
-    + [purge-wrangler][108]
+    + [eGPU][107]
+    + [Xcode][108]
     + [CUDA][109]
     + [cuDNN][110]
     + [(optional) NCCL][111]
 - [eGPU Test][112]
 - [Bootcamp Windows][113]
 - [Tensorflow-GPU][114]
-    + [Python][115]
-    + [Pre-compiled Wheel][116]
     + [Self-compilation][117]
 - [Tensorflow Test][118]
 
@@ -27,7 +25,9 @@ The unfortunate battle between Apple and Nvidia sets obstacles for Mac users to 
 
 It's been more than a year since the announcement of Mojave in 2018. The web driver for their GPUs under the new macOS has not been published by Nvidia. And it's unknown when, if at all, such driver would be available for 10.14 or 10.15. 
 
-Meanwhile, however, effortless work has been done in the unofficial way by multiple communities and individuals. Their work has succefully bridged the gaps to some level. After extensive amount of research and experiment, I am able aggregate necessary information to benefit from their generous contributions. This guide is to take notes of my experience in the complete process to connect a Nvidia GeForce GTX card as an eGPU to work with my MBP, and enable tensorflow to leverage the eGPU in machine learning. 
+Meanwhile, however, effortless work has been done in the unofficial way by multiple communities and individuals. Their work has succefully bridged the gaps to some level. After extensive amount of research and experiment, I am able aggregate necessary information to benefit from their generous contributions. 
+
+This guide is to take notes of my experience in the complete process to connect a Nvidia GeForce GTX card as an eGPU to work with my MBP, and enable tensorflow to leverage the eGPU in machine learning. At the same time, it supplements other guidance from the internet by incorporating the latest available tools (i.e., tensorflow 1.14, CUDA 10, cuDNN 7.4, MBP 2019) and pave a way of "can-do". 
 
 ## Environment
 - MacBook Pro (13-inch, 2019, Four Thunderbolt 3 ports) 
@@ -428,6 +428,7 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
   - llvm
   - bazel
   - https://github.com/TomHeaven/tensorflow-osx-build/blob/master/build_instructions_1.10.md
+  - https://medium.com/xplore-ai/nvidia-egpu-macos-tensorflow-gpu-the-definitive-setup-guide-to-avoid-headaches-f40e831f26ea
 </details>
 
 ## Tensorflow Test
@@ -681,27 +682,22 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
   $ cuda-smi
   Device 0 [PCIe 0:67:0.0]: GeForce GTX 1080 Ti (CC 6.1): 9241.9 of 11264 MB (i.e. 82%) Free
   ```
-
 </details>
 
 
-
-
-[101]:    https://github.com/quant4ds/tensorflow_gpu_macOS#purpose
+[101]:    https://github.com/quant4ds/tensorflow_gpu_macOS#motivation
 [102]:    https://github.com/quant4ds/tensorflow_gpu_macOS#environment
 [103]:    https://github.com/quant4ds/tensorflow_gpu_macOS#hardware
 [104]:    https://github.com/quant4ds/tensorflow_gpu_macOS#backup
 [105]:    https://github.com/quant4ds/tensorflow_gpu_macOS#macos
 [106]:    https://github.com/quant4ds/tensorflow_gpu_macOS#nvidia-egpu-installation
-[107]:    https://github.com/quant4ds/tensorflow_gpu_macOS#xcode
-[108]:    https://github.com/quant4ds/tensorflow_gpu_macOS#purge-wrangler
+[107]:    https://github.com/quant4ds/tensorflow_gpu_macOS#egpu
+[108]:    https://github.com/quant4ds/tensorflow_gpu_macOS#xcode
 [109]:    https://github.com/quant4ds/tensorflow_gpu_macOS#cuda
 [110]:    https://github.com/quant4ds/tensorflow_gpu_macOS#cudnn
 [111]:    https://github.com/quant4ds/tensorflow_gpu_macOS#optional-nccl
 [112]:    https://github.com/quant4ds/tensorflow_gpu_macOS#egpu-test
 [113]:    https://github.com/quant4ds/tensorflow_gpu_macOS#bootcamp-windows
 [114]:    https://github.com/quant4ds/tensorflow_gpu_macOS#tensorflow-gpu
-[115]:    https://github.com/quant4ds/tensorflow_gpu_macOS#python
-[116]:    https://github.com/quant4ds/tensorflow_gpu_macOS#pre-compiled-wheel
 [117]:    https://github.com/quant4ds/tensorflow_gpu_macOS#self-compilation
 [118]:    https://github.com/quant4ds/tensorflow_gpu_macOS#tensorflow-test
