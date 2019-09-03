@@ -21,23 +21,24 @@
 - [Tensorflow Test][118]
 
 ## Motivation
-The unfortunate battle between Apple and Nvidia sets obstacles for Mac users to utilize majority of Nvidia GPU with their machines. What exacerbates our lives is the announcement from tensorflow team to stop support macOS after v1.2. 
+The unfortunate battle between Apple and Nvidia sets obstacles for Mac users to utilize majority of Nvidia GPU with their machines. What exacerbates our lives is the announcement from tensorflow team to stop supporting macOS after v1.2. 
 
-It's been more than a year since the announcement of Mojave in 2018. The web driver for their GPUs under the new macOS has not been published by Nvidia. And it's unknown when, if at all, such driver would be available for 10.14 or 10.15. 
+It's been more than a year since the announcement of Mojave in 2018. The web driver for their GPUs under the new macOS has not been published by Nvidia. And it's unknown when, if at all, such driver would be available for 10.14 or 10.15 in the near future. 
 
-Meanwhile, however, effortless work has been done in the unofficial way by multiple communities and individuals. Their work has succefully bridged the gaps to some level. After extensive amount of research and experiment, I am able aggregate necessary information to benefit from their generous contributions. 
+Meanwhile, however, relentless work has been done in the unofficial way by multiple communities and individuals voluntarily. Their work has succefully bridged the gaps to some level. After extensive amount of research and experiment, I am able aggregate necessary information to benefit from their generous contributions. 
 
-This guide is to take notes of my experience in the complete process to connect a Nvidia GeForce GTX card as an eGPU to work with my MBP, and enable tensorflow to leverage the eGPU in machine learning. At the same time, it supplements other guidance from the internet by incorporating the latest available tools (i.e., tensorflow 1.14, CUDA 10, cuDNN 7.4, MBP 2019) and pave a way of "can-do". 
+This guide is to take notes of my experience in the complete process to connect a Nvidia GeForce GTX card as an eGPU to work with my MBP, and enable tensorflow to leverage the computing power of the eGPU in machine learning. At the same time, it supplements other guidance from the internet by incorporating the latest available tools (i.e., tensorflow 1.14, CUDA 10, cuDNN 7.4, MBP 2019) and pave the way of "can-do". 
 
 ## Environment
 - MacBook Pro (13-inch, 2019, Four Thunderbolt 3 ports) 
-- Asus Strix Gaming X GTX 1080 Ti
+- Asus Strix 1080 Ti
 - Razer Core X Chroma
-- macOS High Sierra 10.13.6 build 17G8030
+- macOS High Sierra 10.13.6 build 17G8030 (updated from 17G2208)
 - Xcode 9.4.1
+- Nvidia web driver 387.10.10.10.40.130 (integrated in purge-wrangler)
 - CUDA Toolkit 10.0
 - cuDNN 7.4.2
-- Python 3.7.3 (coming from Anaconda3-2019.07)
+- Python 3.7.3 (coming with Anaconda3-2019.07)
 - Tensorflow 1.14
 
 ## Hardware
@@ -51,6 +52,8 @@ This guide is to take notes of my experience in the complete process to connect 
 ## BACKUP
 ```diff
 - Back up!!
+- Back up!!
+- Back up!!
 ```
 
 ## macOS
@@ -61,7 +64,7 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
 <details>
   <summary>Download macOS 10.13.6</summary>
   
-  - **For 2018 and 2019 MBPs with touch bar, you have to download a special built of the High Sierra (i.e., 17G2208).** 
+  - **For 2018 and 2019 MBPs with touch bar, you have to download a special build of the High Sierra (i.e., 17G2208).** 
       + It's reported that regular build High Sierra (i.e., 17G65) is not compatible with 2018 MBP with touch bar. I tested on my 2019 MBP and it's also no-go. 
   - Four ways to download: 
       + Direct download link if you can find one - I used this [17G2208](http://oceanofdmg.com/download-macos-high-sierra-v10-13-6-17g2208-app-store-dmg/); 
@@ -490,7 +493,7 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
 </details>
 
 <details>
-  <summary>Test 2 (a simple calculation)</summary>
+  <summary>Test 2 (simple calculation)</summary>
 
   Run below python code:
   ```python
@@ -557,7 +560,7 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
 </details>
 
 <details>
-  <summary>Test 3 (a model training)</summary>
+  <summary>Test 3 (CNN training)</summary>
 
   Run below python code:
   ```python
