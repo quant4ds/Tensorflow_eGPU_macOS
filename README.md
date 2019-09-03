@@ -138,6 +138,17 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
   ---
 </details>
 
+<details>
+  <summary>System info</summary>
+
+  - About this mac:  
+  ![](/misc/system_overview.png)  
+  ![](/misc/system_displays.png)  
+  - System report:  
+  ![](/misc/system_tb3.png)  
+  ![](/misc/system_graphics.png)  
+</details>
+
 > ### Xcode
 
 <details>
@@ -344,7 +355,15 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
   <summary>CUDA-Z</summary>
 
   - Install
-  - Result
+      + Install Homebrew by running below command in terminal:
+      ```bash
+      $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      ```
+      + Brew install CUDA-Z by running below command in terminal:
+      ```bash
+      $ brew cask install cuda-z
+      ```
+  - Result  
   ![](/misc/guda_z.png)
 
 </details>
@@ -352,13 +371,17 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
 <details>
   <summary>Unigine</summary>
 
-  - Valley
-  - Heaven
+  - [Valley](https://assets.unigine.com/d/Unigine_Valley-1.0.dmg)  
+  ![](/misc/unigine_valley.png)
+  - [Heaven](https://assets.unigine.com/d/Unigine_Heaven-4.0.dmg)  
+  ![](/misc/unigine_heaven.png)
 </details>
 
 <details>
   <summary>Geekbench</summary>
 
+  ![](/misc/geekbench4_opencl.png)  
+  ![](/misc/geekbench4_metal.png)
 </details>
 
 ## Bootcamp Windows
