@@ -509,9 +509,9 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
   We get:
   ```python
   2019-09-03 12:56:57.447240: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.10.0.dylib
-  WARNING:tensorflow:From /Users/alex/Documents/workon/tf_gpu_test/gpu_test1.py:3  : The name tf.ConfigProto is deprecated. Please use tf.compat.v1.  ConfigProto instead.
+  WARNING:tensorflow:From /Users/quant4ds/Documents/workon/tf_gpu_test/gpu_test1.py:3  : The name tf.ConfigProto is deprecated. Please use tf.compat.v1.  ConfigProto instead.
   
-  WARNING:tensorflow:From /Users/alex/Documents/workon/tf_gpu_test/gpu_test1.py:  11: The name tf.Session is deprecated. Please use tf.compat.v1.Session   instead.
+  WARNING:tensorflow:From /Users/quant4ds/Documents/workon/tf_gpu_test/gpu_test1.py:  11: The name tf.Session is deprecated. Please use tf.compat.v1.Session   instead.
   
   2019-09-03 12:56:58.667338: I tensorflow/stream_executor/platform/default/  dso_loader.cc:42] Successfully opened dynamic library libcuda.dylib
   2019-09-03 12:56:58.672698: I tensorflow/stream_executor/cuda/cuda_gpu_executor  .cc:966] OS X does not support NUMA - returning NUMA node zero
@@ -606,9 +606,9 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
   We get:
   ```python
   2019-09-03 12:59:54.396877: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.10.0.dylib
-  WARNING:tensorflow:From /Users/alex/Documents/workon/tf_gpu_test/gpu_test3.py:  30: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.  ConfigProto instead.
+  WARNING:tensorflow:From /Users/quant4ds/Documents/workon/tf_gpu_test/gpu_test3.py:  30: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.  ConfigProto instead.
   
-  WARNING:tensorflow:From /Users/alex/Documents/workon/tf_gpu_test/gpu_test3.py:  33: The name tf.Session is deprecated. Please use tf.compat.v1.Session   instead.
+  WARNING:tensorflow:From /Users/quant4ds/Documents/workon/tf_gpu_test/gpu_test3.py:  33: The name tf.Session is deprecated. Please use tf.compat.v1.Session   instead.
   
   2019-09-03 12:59:55.979836: I tensorflow/stream_executor/platform/default/  dso_loader.cc:42] Successfully opened dynamic library libcuda.dylib
   2019-09-03 12:59:55.986792: I tensorflow/stream_executor/cuda/cuda_gpu_executor  .cc:966] OS X does not support NUMA - returning NUMA node zero
@@ -633,9 +633,9 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
   2019-09-03 12:59:56.644706: I tensorflow/stream_executor/cuda/cuda_gpu_executor  .cc:966] OS X does not support NUMA - returning NUMA node zero
   2019-09-03 12:59:56.644874: I tensorflow/stream_executor/cuda/cuda_gpu_executor  .cc:966] OS X does not support NUMA - returning NUMA node zero
   2019-09-03 12:59:56.644990: I tensorflow/core/common_runtime/gpu/gpu_device.cc:  1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU  :0 with 9011 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080   Ti, pci bus id: 0000:43:00.0, compute capability: 6.1)
-  WARNING:tensorflow:From /Users/alex/Documents/workon/tf_gpu_test/gpu_test3.py:  34: The name tf.keras.backend.set_session is deprecated. Please use tf.  compat.v1.keras.backend.set_session instead.
+  WARNING:tensorflow:From /Users/quant4ds/Documents/workon/tf_gpu_test/gpu_test3.py:  34: The name tf.keras.backend.set_session is deprecated. Please use tf.  compat.v1.keras.backend.set_session instead.
   
-  WARNING:tensorflow:From /Users/alex/anaconda3/envs/tf_gpu/lib/python3.7/site-  packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.  __init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and   will be removed in a future version.
+  WARNING:tensorflow:From /Users/quant4ds/anaconda3/envs/tf_gpu/lib/python3.7/site-  packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.  __init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and   will be removed in a future version.
   Instructions for updating:
   Call initializer instance with the dtype argument instead of passing it to the   constructor
   Epoch 1/20
