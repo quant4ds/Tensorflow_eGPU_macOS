@@ -345,7 +345,7 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
 
   - Install
   - Result
-  ![](/master/misc/guda_z.png)
+  ![](/misc/guda_z.png)
 
 </details>
 
