@@ -49,7 +49,9 @@ Meanwhile, however, effortless work has been done in the unofficial way by multi
 - I intentionally avoided 20 series cards, given some discussions about the RTX [issues](https://www.nvidia.com/en-us/geforce/forums/geforce-graphics-cards/5/296479/another-dead-rtx-2080ti-with-an-explanation/). 
 
 ## BACKUP
-<span style="color:red"> **Back up!!** </span>
+```diff
+- Back up!!
+```
 
 ## macOS
 If your current macOS is High Sierra 10.13.6, you can skip this section and proceed directly to [eGPU installation](https://github.com/quant4ds/tensorflow_gpu_macOS#nvidia-egpu-installation). 
@@ -110,7 +112,7 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
 > ### eGPU
 
 <details>
-  <summary>**Turn off SIP**</summary>
+  <summary>Turn off SIP</summary>
  
   - Restart the mac while pressing Command+R and holding until entering recovery mode;
   - Select "Terminal" under Utilities in menu, and run below command:
@@ -131,7 +133,7 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
   - Source code, instuction, and discussions can be found [here](https://github.com/mayankk2308/purge-wrangler), and [here](https://egpu.io/purge-wrangler.sh).
 
   ---
-  **Note**: 
+  **Note**:  
   An alternative to purge-wrangler is [macOS-eGPU](https://github.com/learex/macOS-eGPU). Instruction can be found [here](https://theunlockr.com/how-to-use-nvidia-cards-with-your-mac-egpu/). However the former is recommended. 
   ---
 </details>
@@ -217,7 +219,7 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
   ```
 
   ---
-  **Note**: 
+  **Note**:  
   If not using bash, then should change other file accordingly (e.g., ~/.zshrc if using zsh).
   ---
 </details>
@@ -331,7 +333,7 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
   ```
 
   ---
-  **Note**:
+  **Note**:  
   Probably only needed for MBP15 with dGPU.
   ---
 </details>
@@ -339,15 +341,15 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
 ## eGPU Test
 
 <details>
+  <summary>CUDA-Z</summary>
+
+</details>
+
+<details>
   <summary>Unigine</summary>
 
   - Valley
   - Heaven
-</details>
-
-<details>
-  <summary>CUDA-Z</summary>
-
 </details>
 
 <details>
