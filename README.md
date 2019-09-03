@@ -343,6 +343,10 @@ The mid-2019 MBP comes with Mojave (macOS 10.14.6) pre-installed. Despite the ni
 <details>
   <summary>CUDA-Z</summary>
 
+  - Install
+  - Result
+  ![](/master/misc/guda_z.png)
+
 </details>
 
 <details>
