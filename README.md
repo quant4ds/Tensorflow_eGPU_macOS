@@ -45,14 +45,14 @@ OSX10.13.6-17G2208_Xcode9.4.1_tensorflow1.14_python3.7.3_CUDA10.0_cuDNN7.4.3
 [101]:    https://github.com/quant4ds/tensorflow_gpu_macOS#purpose
 [102]:    https://github.com/quant4ds/tensorflow_gpu_macOS#environment
 [103]:    https://github.com/quant4ds/tensorflow_gpu_macOS#macos-preparation
-[104]:    https://github.com/quant4ds/tensorflow_gpu_macOS#(optional)-downgrade
+[104]:    https://github.com/quant4ds/tensorflow_gpu_macOS#optional-downgrade
 [105]:    https://github.com/quant4ds/tensorflow_gpu_macOS#setup
 [106]:    https://github.com/quant4ds/tensorflow_gpu_macOS#nvidia-egpu-installation
 [107]:    https://github.com/quant4ds/tensorflow_gpu_macOS#xcode
 [108]:    https://github.com/quant4ds/tensorflow_gpu_macOS#purge-wrangler
 [109]:    https://github.com/quant4ds/tensorflow_gpu_macOS#cuda
 [110]:    https://github.com/quant4ds/tensorflow_gpu_macOS#cudnn
-[111]:    https://github.com/quant4ds/tensorflow_gpu_macOS#(optional)-nccl
+[111]:    https://github.com/quant4ds/tensorflow_gpu_macOS#optional-nccl
 [112]:    https://github.com/quant4ds/tensorflow_gpu_macOS#egpu-test
 [113]:    https://github.com/quant4ds/tensorflow_gpu_macOS#bootcamp-windows
 [114]:    https://github.com/quant4ds/tensorflow_gpu_macOS#tensorflow-gpu
